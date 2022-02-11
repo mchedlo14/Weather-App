@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcurt icon" href="cl.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Mochiy+Pop+P+One&family=Nunito&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>Weather</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="input-container" id="first-div">
+            <div class="weather-text-container">
+                <p class="text">Weather App</p>
+            </div>
+
+            <div class="search-container">
+                <p class="not-found" id="not-found">City Not Found</p>
+                <div class="input-box">
+                    <input type="text" class="input" id="input" placeholder="Enter City Name">
+                </div>
+                <div class="btn-container">
+                    <button id="btn" class="search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-info-container" id="weather-info-container">
+            <div class="back-weather-app-container">
+                <p class="back-text" id="weather-app">Weather App</p>
+            </div>
+
+            <div class="information-container">
+                <!-- <p id="icon">icon</p> -->
+                <p class="celsius" id="celsius"></p>
+                <p id="cloud"></p>
+                <p id="place">tbilisi</p>
+            </div>
+
+            <div class="parent-container">
+                <div class="left-block">
+                    <p id="feels-like">Feels Like</p>
+                    <p id="feels"></p>
+                </div>
+                <div class="right-block">
+                    <p id="humadity">8hymadity</p>
+                    <p id="hum"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@media(max-width:440px){
+    .input-box{
+        width: 80%;
+    }
+    #input{
+        width: 100%;
+        text-align: center;
+    }
+    .btn-container{
+        width: 80%;
+    }
+    .search-btn{
+        width: 100%;
+    }
+    .text{
+        text-align: center;
+    }
+}
