@@ -8,6 +8,7 @@ document.getElementById('btn').addEventListener('click',function(){
         return res.json()
     })
     .then(function(resData){
+        console.log(resData.weather[0].main)
         document.getElementById('input').addEventListener('focus',function(){
             this.value = '';
         })
@@ -30,6 +31,9 @@ document.getElementById('btn').addEventListener('click',function(){
             document.getElementById('hum').textContent = resData.main.humidity + ' ' +'%';
         }
         
+        // if(resData.weather[0].main === 'Clear'){
+        //     document.getElementById('cloud-clear').style.display = 'block'
+        // }
 
     })
     .catch(function(error){
@@ -37,7 +41,7 @@ document.getElementById('btn').addEventListener('click',function(){
     })
 })
 
-document.getElementById('weather-app').addEventListener('click',function(){
+document.getElementById('icon').addEventListener('click',function(){
     document.getElementById('first-div').style.display = 'block';
     document.getElementById('weather-info-container').style.display = 'none';
 })
